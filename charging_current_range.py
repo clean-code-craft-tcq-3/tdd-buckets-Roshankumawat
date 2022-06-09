@@ -12,4 +12,4 @@ def checkRange(inputArray):
         if (checkDifference(first_number,next_number) ==0 or checkDifference(first_number,next_number)==1):
             reading=reading+1
         else:
-            print("Range:",first_number1,"-",first_number, reading )
+            return (first_number1,first_number, reading )
