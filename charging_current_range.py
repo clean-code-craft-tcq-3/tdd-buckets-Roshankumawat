@@ -14,7 +14,7 @@ def getRangeDetails(inputArray):
 
     
     for index in range(0, len(inputArray)-1):
-        if(isConsecutive(inputArray[index],inputArray[index+1])):#and index<len(inputArray)-1
+        if(checkDifference(inputArray[index],inputArray[index+1])):#and index<len(inputArray)-1
             reading+=1
             range_end_number=inputArray[index+1]
            
