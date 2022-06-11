@@ -1,15 +1,31 @@
-
+newArray=[]
 def checkDifference(number1, number2):
-   return number2-number1
-    
-def checkRange(inputArray):
-    reading=1
+   difference = number2 - number1
+   return (difference == 0 or difference == 1)
+
+def getRangeDetails(inputArray):
+    itr= 0
+    newArray=[]
     inputArray.sort()
-    first_number1= inputArray[0]
+    reading=1
+    range_first_number=inputArray[0]
+    range_end_number= inputArray[0]
+    
+
+    
     for index in range(0, len(inputArray)-1):
-        first_number= inputArray[index]
-        next_number= inputArray[index+1]
-        if (checkDifference(first_number,next_number) ==0 or checkDifference(first_number,next_number)==1):
-            reading=reading+1
+        if(isConsecutive(inputArray[index],inputArray[index+1])):#and index<len(inputArray)-1
+            reading+=1
+            range_end_number=inputArray[index+1]
+           
         else:
-            return (first_number1,first_number, reading )
+           newArray.append(range_first_number)
+           newArray.append(range_end_number)
+           reading=1
+           range_first_number=inputArray[index+1]
+           range_end_number=inputArray[index+1]
+
+        newRangeArray=(range_first_number, range_end_number, reading)
+        newArray.append(newRangeArray)
+       
+    return reading 
