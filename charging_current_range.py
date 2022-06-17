@@ -10,7 +10,7 @@ def getRangeDetails(inputArray):
     range_end_number= inputArray[0]
 
     for index in range(0, len(inputArray)-1):
-       if(isConsecutive(inputArray[index],inputArray[index+1])):
+        if(isConsecutive(inputArray[index],inputArray[index+1])):
             reading+=1
             range_end_number=inputArray[index+1]
                     
