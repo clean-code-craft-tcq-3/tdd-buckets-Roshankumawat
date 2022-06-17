@@ -23,11 +23,5 @@ def getRangeDetails(inputArray):
 
     newRangeArray=(range_first_number, range_end_number, reading)
     newArray.append(newRangeArray)
-    for num in range(0, len(newArray)-1):
-        formateRange(newArray[num])
-        
-def formateRange(num):
-    num= print(num[0],"-", num[1],",", num[2])
-    return num
-
+    return newArray
 
