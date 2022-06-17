@@ -27,7 +27,6 @@ def getRangeDetails(inputArray):
         formateRange(newArray[num])
         
 def formateRange(num):
-    # print("in Formate function")
     num= print(num[0],"-", num[1],",", num[2])
     return num
 
