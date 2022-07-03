@@ -25,13 +25,5 @@ def getRangeDetails(inputArray):
     newArray.append(newRangeArray)
     return newArray
 
-def binary_to_decimal(binary):
-    i,integer = 0,0
-    size = len(binary)
-    assert(size<12)
-    while i < len(binary):
-        integer += int(binary[size - 1 - i])*pow(2,i)
-        i+=1
-    return (integer)
 
 
