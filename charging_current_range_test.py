@@ -12,6 +12,6 @@ class RangeBucketTest(unittest.TestCase):
         self.assertTrue(charging_current_range.getRangeDetails([2, 3, 4, 6, 7]) == [(2 , 4 , 3), (6 , 7 , 2)])
         
    def test_sensor_output(self):
-        self.assertTrue(Current_sensing_at_high_fidility.decimal_to_binary(123)==(['0','0','0', '0', '0', '1', '1', '1', '1', '0', '1', '1'])
+        self.assertTrue(Current_sensing_at_high_fidility.decimal_to_binary(123)==(['0','0','0', '0', '0', '1', '1', '1', '1', '0', '1', '1']))
 if __name__ == '__main__':
     unittest.main()
